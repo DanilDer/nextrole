@@ -1,0 +1,1 @@
+# NextRole — AI Resume & Job Tracker Platform
