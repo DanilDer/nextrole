@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 // AI Analysis route - your feature
-//app.use('/api/analysis', require('./route/analysis')); uncomment once ready
+app.use('/api/analysis', require('./routes/analysis'));
 
 // ── Start Server ────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
