@@ -6,20 +6,20 @@ const AuthContext = createContext(null);
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
     try {
-      const stored = localStorage.getItem('user');
+      const stored = localStorage.getItem('nextrole_user');
       return stored ? JSON.parse(stored) : null;
     } catch {
       return null;
     }
   });
 
-  const [token, setToken] = useState(() => localStorage.getItem('token'));
+  const [token, setToken] = useState(() => localStorage.getItem('nextrole_token'));
 
   function persist(userData, tokenValue) {
     setUser(userData);
     setToken(tokenValue);
-    localStorage.setItem('user', JSON.stringify(userData));
-    localStorage.setItem('token', tokenValue);
+    localStorage.setItem('nextrole_user', JSON.stringify(userData));
+    localStorage.setItem('nextrole_token', tokenValue);
   }
 
   async function login(email, password) {
@@ -37,8 +37,8 @@ export function AuthProvider({ children }) {
   function logout() {
     setUser(null);
     setToken(null);
-    localStorage.removeItem('user');
-    localStorage.removeItem('token');
+    localStorage.removeItem('nextrole_user');
+    localStorage.removeItem('nextrole_token');
   }
 
   return (

@@ -1,7 +1,7 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
 
 function getHeaders(isFormData = false) {
-  const token = localStorage.getItem('token');
+  const token = localStorage.getItem('nextrole_token');
   const headers = {};
   if (!isFormData) headers['Content-Type'] = 'application/json';
   if (token) headers['Authorization'] = `Bearer ${token}`;

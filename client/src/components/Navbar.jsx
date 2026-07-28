@@ -6,9 +6,8 @@ import './Navbar.css';
 const NAV_LINKS = [
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/applications', label: 'Applications' },
-  { to: '/resumes', label: 'Resumes' },
+  { to: '/resume', label: 'Resume' },
   { to: '/interviews', label: 'Interviews' },
-  { to: '/analysis', label: 'Analysis' },
 ];
 
 export default function Navbar() {
