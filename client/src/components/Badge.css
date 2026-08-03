@@ -1,0 +1,28 @@
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge--applied {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.badge--interview {
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.badge--offer {
+  background: #f0fff4;
+  color: #276749;
+}
+
+.badge--rejected {
+  background: #fff5f5;
+  color: #9b2c2c;
+}
