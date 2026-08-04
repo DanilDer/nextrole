@@ -5,7 +5,7 @@ const {
   listInterviews,
   createInterview,
   updateInterview,
-  deleteInterview,
+  deleteInterview
 } = require('../controllers/interviewsController');
 
 router.use(authMiddleware);
